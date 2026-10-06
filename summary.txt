@@ -1,0 +1,26 @@
+1. Yêu cầu chung
+Thực hiện dự án trong 10 tuần để xây dựng một product hoàn chỉnh, không chỉ dừng ở
+việc huấn luyện mô hình.
+Mỗi sản phẩm bắt buộc có:
+• 01 mô hình ML không phải generative AI, do nhóm tự huấn luyện trên dữ liệu
+công khai từ Kaggle, Hugging Face hoặc nguồn tương đương.
+• 01 thành phần LLM, có thể sử dụng API hoặc self-hosted model.
+• Backend/API và giao diện cho người dùng.
+• Data pipeline và kiểm tra chất lượng dữ liệu.
+• Đánh giá riêng model quality và system quality.
+• Cơ chế xử lý uncertainty/error như fallback, human review, correction hoặc
+escalation.
+• Pipeline có khả năng tái lập, versioning và kiểm thử tự động.
+• Deployment, logging/monitoring và phương án xử lý sự cố.
+Sinh viên được phép và khuyến khích sử dụng AI hỗ trợ lập trình, nhưng phải hiểu,
+kiểm thử và bảo vệ được các quyết định kỹ thuật của hệ thống.
+
+Chủ đề 4 - LearnGuard: Student Success Early-Warning Assistant
+Xây dựng hệ thống hỗ trợ giảng viên/cố vấn phát hiện sớm sinh viên có nguy cơ gặp
+khó khăn trong học tập.
+• ML: dự đoán student-at-risk từ dữ liệu học tập, có thể sử dụng OULAD.
+• LLM: tạo advisor brief và gợi ý nội dung hỗ trợ sinh viên.
+• Sản phẩm: learning data → risk prediction → LLM summary → cố vấn xem xét
+→ intervention.
+• Chú ý: temporal leakage, explainability, fairness và sử dụng prediction có trách
+nhiệm

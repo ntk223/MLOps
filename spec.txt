@@ -1,0 +1,57 @@
+Project Definition & Requirements Specification
+1. Problem & scope
+Gợi ý: Hãy đặt câu kiẻu này “For [user/stakeholder], our product uses [AI capability] to
+support [decision/action], so that [desired outcome]”.
+Làm rõ:
+- Primary user / stakeholders
+- Vấn đề cần giải quyết và giá trị mong muốn
+- In scope: hệ thống sẽ làm gì?
+- Out of scope: hệ thống chủ động không làm gì?
+- Vì sao cần AI/ML? Có giải pháp đơn giản hơn như rules/search/manual process không?
+2. Success Criteria
+- Primary outcome: kết quả quan trọng nhất đối với user/product.
+- 1–2 guardrails: điều không được phép xấu đi.
+- 1–2 system/user metrics.
+- ML model metric(s).
+- LLM-related metric(s) nếu phù hợp.
+Không dùng duy nhất accuracy/F1 làm tiêu chí thành công.
+3. Requirements – Assumptions – Specifications
+Đưa ra khoảng 3-5 yêu cầu quan trọng nhất, ưu tiên những yêu cầu quyết định thiết kế hệ
+thống.
+Mỗi requirement cần:
+REQ-ID: Requirement + Measure/Acceptance criterion
+Ví dụ:
+REQ-01: Với các trường hợp thuộc phạm vi X, hệ thống phải xử lý đúng ≥ Y% trên evaluation
+set đã xác định.
+Ngoài ra, xác định:
+- 2-4 assumptions (ASM): điều gì về môi trường/người dùng/dữ liệu phải đúng để hệ thống
+hoạt động?
+- Một số SPEC quan trọng: hệ thống sẽ phải thực hiện hành vi gì để đáp ứng requirement.
+4. Quality Attributes, Constraints & Trade-oFs
+Chọn 3–5 quality attributes quan trọng nhất của sản phẩm, ví dụ:
+- accuracy / robustness
+- latency / cost
+- availability
+- interpretability
+- privacy / security / fairness
+- scalability
+Không cần tối ưu tất cả. Hãy xếp thứ tự ưu tiên.
+Nêu thêm các constraint quan trọng:
+- dataset/data availability
+- thời gian dự án
+- compute/API budget
+- latency/cost limit
+- bắt buộc dùng non-generative ML + LLM.
+Chỉ ra ít nhất 2 trade-oäs, ví dụ:
+Accuracy ↔ latency
+Accuracy ↔ interpretability
+LLM quality ↔ inference cost
+5. Initial Risks & Controls
+Xác định ít nhất 3 failure modes, gồm:
+1. Model/AI behavior failure
+2. Data/environment/assumption failure
+3. Workflow/interface/human failure
+Với mỗi failure:
+Cause → Failure → Consequence → Aäected stakeholder → Control
+Chọn 1 risk quan trọng nhất và mô tả đầy đủ:
+Prevention → Detection → Response → Recovery → Owner
